@@ -1,0 +1,70 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+overflow: hidden;
+        }
+        .header {
+                 padding: 5px;
+                 text-align: center;
+                 background: #1abc9c;
+                 color: white;
+                 font-size: 30px;
+}
+.background{
+background-image:url("{% static '/diabetesprediction/images/background.jpg' %}");
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+.transparent{
+background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ div{
+            color:white;
+        }
+        h2{
+            color: 'white';
+            font-family: arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 400px;
+        }
+input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+  <h1>Diabetes Type 2 Prediction</h1>
+</div>
+<div class ="background">
+    <div class="transparent">
+    <form action="predict">
+        <input type="submit" value="Let's get started">
+    </form>
+        </div>
+    </div>
+</body>
+</html>
